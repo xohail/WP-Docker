@@ -20,4 +20,6 @@ Guide to setup Wordpress with Mysql 8 and PHP 7+
   * use mysql
   * select user,host from user;
     * ALTER USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY 'adminpassword';
+* Install Wordpress  
+
   
