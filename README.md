@@ -1,5 +1,5 @@
 # WP-Docker
-Guide to setup Wordpress with Mysql 8 and PHP 7+
+Guide to setup Wordpress with Mysql 8, phpmyadmin and PHP 7+
 
 ## Steps to configure on local system
 * Open CLI
