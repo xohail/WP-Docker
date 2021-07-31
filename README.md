@@ -26,7 +26,7 @@ Guide to setup Wordpress with Mysql 8 and PHP 7+
 * `XDEBUG_CONFIG: client_host=docker.for.mac.host.internal` # is added to docker-compose.yml
 * Php Storm > Preferences
 * ![img.png](img.png)
-* Add a breakpoint to _src/wp-content/themes/twentytwenty/index.php_and refresh landing page to test
+* Add a breakpoint to _src/wp-content/themes/twentytwenty/index.php_ and refresh landing page to test
 
 
 
