@@ -9,10 +9,10 @@ services:
       - ./database/initdb.d:/docker-entrypoint-initdb.d
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: adminpassword # any random string will do
-      MYSQL_DATABASE: wp_docker # the name of your mysql database
-      MYSQL_USER: admin # the name of the database user
-      MYSQL_PASSWORD: adminpassword # the password of the mysql user
+      MYSQL_ROOT_PASSWORD: adminpassword
+      MYSQL_DATABASE: wp_docker
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: adminpassword
 
   example:
     depends_on:
@@ -30,3 +30,14 @@ services:
     restart: always
     volumes:
       - ./src:/var/www/html
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: wp-phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: adminpassword
+    ports:
+      - 8081:80
+    restart: always
